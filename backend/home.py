@@ -6,4 +6,4 @@ home = Blueprint(__name__, "home")
 @login_required
 @home.route("/dashboard")
 def dashboard():
-    return f"<h1>hi {current_user.name}</h1>"
+    return f"<h1>hi {current_user.name}</h1><a href='/logout'><button>logout</button></a>"
